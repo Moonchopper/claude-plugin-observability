@@ -7,7 +7,7 @@ allowed-tools: Bash, Read, Glob, Grep, Edit, Write, Skill
 # Create Datadog Log Index
 
 ## Goal
-Help the user open a compliant Terraform PR to `fixture-org/datadog-operations`
+Help the user open a compliant Terraform PR to `Moonchopper/datadog-operations`
 that provisions a Datadog log index. End state: a PR-handoff payload has been
 written via the `pr-handoff` skill with the drafted file and PR body.
 
@@ -31,16 +31,16 @@ set `REPO_ROOT` to the toplevel and skip to Step 2.
 
 **1b. Conventional paths.** For each of these paths, check if it is a valid
 clone of the target (i.e. `.git/` exists and origin matches):
-- `~/src/fixture-org/datadog-operations`
-- `~/code/fixture-org/datadog-operations`
-- `~/git/fixture-org/datadog-operations`
-- `~/work/fixture-org/datadog-operations`
+- `~/src/Moonchopper/datadog-operations`
+- `~/code/Moonchopper/datadog-operations`
+- `~/git/Moonchopper/datadog-operations`
+- `~/work/Moonchopper/datadog-operations`
 
 First match wins.
 
 **1c. Ask the user.** If nothing was found, ask: "I couldn't find a clone
-of `fixture-org/datadog-operations` locally. Where is it, or shall I clone
-it to `~/src/fixture-org/datadog-operations`?" Wait for the answer before
+of `Moonchopper/datadog-operations` locally. Where is it, or shall I clone
+it to `~/src/Moonchopper/datadog-operations`?" Wait for the answer before
 proceeding.
 
 **Auth preflight.** Before attempting any `gh api` fallback, run:
